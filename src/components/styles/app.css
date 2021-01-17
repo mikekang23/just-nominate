@@ -1,0 +1,58 @@
+html {
+  overflow-y: scroll;
+}
+
+nav {
+  background-color: #3a5749;
+}
+
+.brandText {
+  padding-left: 10px;
+}
+
+.input-group {
+  width: auto;
+}
+
+.input-group input,
+.input-group .form-notch,
+.input-group .form-notch-trailing {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.input-group button {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+.searchBar label {
+  margin-left: 10px;
+}
+
+.searchResultBox h5 {
+  margin-top: 15px;
+}
+
+.searchResultBox button {
+  margin-top: 5px;
+}
+
+.nominationBox h5 {
+  padding: 20px;
+}
+
+h5.nomination {
+  color: white;
+  background-color: #974498;
+}
+
+.removeBtn {
+  float: right;
+  margin-top: -3px;
+}
+
+.nominatedItem {
+  border: none;
+  margin: 10px 20px;
+}
