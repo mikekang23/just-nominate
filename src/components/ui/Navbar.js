@@ -14,7 +14,7 @@ const Navbar = () => {
               <circle cx="12" cy="13" r="4"></circle>
             </svg>
             <div className="brandText">
-              <strong>Movie Nominations</strong>
+              <strong>Just Nominate</strong>
             </div>
           </a>
         </div>
