@@ -2,11 +2,15 @@
 
 Hi I'm Mike (Ki Uk) Kang. Please check out my OMDB movie nomination project submission:
 
-For a `Live Demo` click: [just-nominate](https://just-nominate.herokuapp.com/)
+Try clicking 'Live Demo' to see a working version hosted on Heroku:
+[Live Demo](https://just-nominate.herokuapp.com/)
 
-See the checklist of specifications below the sample picture!
+
+As well, see the checklist of `Tech Specifications` and `Bells & Whistles` below the screenshot picture!
+
 
 ![alt text](https://github.com/mikekang23/just-nominate/blob/master/public/screenshot.png)
+
 
 ### Tech specifications check list
 - [x] Search results should come from OMDB's API
@@ -15,7 +19,8 @@ See the checklist of specifications below the sample picture!
 - [x] Movies in search results can be added and removed from the nomination list.
 - [x] Display a banner when the user has 5 nominations. (Purple banner implemented)
 
-### Bells and Whistles - The extras
+
+### Bells & Whistles - The extras
 - [x] Many search queries for OMDB (and middle steps in between a finalized query string) have empty "N/A" result. I parsed this to make a more human friendly version showing, "Released year is unknown" instead of N/A. The same goes wit the plot.
 - [x] Empty state image for non-existent movie posters added
 - [x] Empty state for an empty nomination list added
