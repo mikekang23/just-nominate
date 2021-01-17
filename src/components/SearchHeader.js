@@ -28,6 +28,7 @@ class SearchHeader extends Component {
               onChange={(e) => onSearchChange(e)}
               value={searchValue}
               ref={this.textInput}
+              placeholder="Good Will Hunting"
             />
             <label>What's your favourite movie title?</label>
           </div>

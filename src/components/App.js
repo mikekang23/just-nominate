@@ -102,7 +102,7 @@ class App extends Component {
         return item.movie.imdbID !== movie.imdbID
       });
 
-      return { nominatedMovies: movies }
+      return { nominatedMovies: movies };
     })
   }
 
@@ -126,9 +126,7 @@ class App extends Component {
         </NominationBox>
       )
     }else{
-      return (
-        <EmptyNominationBox />
-      )
+      return <EmptyNominationBox />
     }
   }
 
@@ -139,7 +137,6 @@ class App extends Component {
         <SearchHeader
           onSearchChange={(e) => this.handleSearchChange(e)}
           searchValue={this.state.searchValue}
-
         />
         <div className="py-2">
           <div className="container">
