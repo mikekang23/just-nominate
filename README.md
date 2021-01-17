@@ -1,6 +1,8 @@
 # Hi, I'm Mike Kang!
 
-Hi I'm Mike Kang. Please check out my OMDB movie nomination project submission: [just-nominate](https://just-nominate.herokuapp.com/)
+Hi I'm Mike (Ki Uk) Kang. Please check out my OMDB movie nomination project submission: 
+
+For a `Live Demo` click: [just-nominate](https://just-nominate.herokuapp.com/)
 
 ![alt text](https://github.com/mikekang23/just-nominate/blob/master/public/screenshot.png)
 
@@ -12,4 +14,4 @@ experience. Thus, I decided to only update the movie results when a non-empty
 response was given by OMDB for a better user experience. To be clear, the api
 call is still being made on each input change.
 
-Enjoy!
+Enjoy! ❤️

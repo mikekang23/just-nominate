@@ -38,17 +38,17 @@ class App extends Component {
 
   getMovieAndReleasedYear = async (movie) => {
     try{
+      // Note that if this API key was a secret API key, I would instead put this in the .env
       const preppedMovie = await axios.get(`https://www.omdbapi.com/?apikey=e6c81fd&t=${movie}`)
+
       // Do not update the image on character changes that cause empty results
       if(preppedMovie.data.Response === 'True' && preppedMovie.data.Released === 'N/A'){
         preppedMovie.data.releasedYear = null;
         return preppedMovie.data;
       }else if(preppedMovie.data.Response === 'True' && preppedMovie.data.Released !== 'N/A'){
         let releasedString = preppedMovie.data.Released;
-
         let releasedYear = releasedString.substr(releasedString.length - 4, 4);
         preppedMovie.data.releasedYear = releasedYear;
-
         return preppedMovie.data;
       }else{
         return this.state.searchResult
