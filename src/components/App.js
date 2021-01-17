@@ -38,7 +38,7 @@ class App extends Component {
 
   getMovieAndReleasedYear = async (movie) => {
     try{
-      const preppedMovie = await axios.get(`http://www.omdbapi.com/?apikey=e6c81fd&t=${movie}`)
+      const preppedMovie = await axios.get(`https://www.omdbapi.com/?apikey=e6c81fd&t=${movie}`)
       // Do not update the image on character changes that cause empty results
       if(preppedMovie.data.Response === 'True' && preppedMovie.data.Released === 'N/A'){
         preppedMovie.data.releasedYear = null;
@@ -138,7 +138,7 @@ class App extends Component {
         <SearchHeader
           onSearchChange={(e) => this.handleSearchChange(e)}
           searchValue={this.state.searchValue}
-          
+
         />
         <div className="py-2">
           <div className="container">
