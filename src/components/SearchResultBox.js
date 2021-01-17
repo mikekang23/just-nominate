@@ -5,12 +5,24 @@ import './styles/list.scss';
 import './styles/app.css';
 
 class SearchResultBox extends Component {
-  constructor(props){
-    super(props);
+  renderNominateButton = (found, capped) => {
+    if(this.props.found){
+      return <button type="button" className="btn btn-sm btn-success" disabled>Already Nominated</button>
+    }
+    if(this.props.capped === 5){
+      return <button type="button" className="btn btn-sm btn-success" disabled>Maximum Reached</button>
+    }
+
+    return (
+      <button
+        type="button"
+        className="btn btn-sm btn-success"
+        onClick={() => this.props.onNominate(this.props.searchResult)}>Nominate</button>
+    )
   }
 
   render() {
-    let {searchResult, found} = this.props;
+    let {searchResult} = this.props;
 
     return (
       <FadeIn>
@@ -30,18 +42,7 @@ class SearchResultBox extends Component {
                 }
 
                 <div className="btn-group">
-                  { found ?
-                    <button
-                        type="button"
-                        className="btn btn-sm btn-success"
-                        disabled
-                        onClick={() => this.props.onNominate(searchResult)}>Already Nominated</button>
-                    :
-                      <button
-                        type="button"
-                        className="btn btn-sm btn-success"
-                        onClick={() => this.props.onNominate(searchResult)}>Nominate</button>
-                  }
+                  {this.renderNominateButton()}
                 </div>
 
               </div>
@@ -49,7 +50,7 @@ class SearchResultBox extends Component {
               {searchResult.Plot !== 'N/A' ?
                 <p className="card-text">{searchResult.Plot}</p>
                 :
-                <p className="card-text">Apologies! No movie plot is available for this movie.</p>
+                <p className="card-text">Apologies! No plot is available for this movie.</p>
               }
             </div>
             </FadeIn>

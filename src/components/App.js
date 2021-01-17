@@ -90,6 +90,7 @@ class App extends Component {
           searchResult={searchResult}
           onNominate={(movie) => this.handleNominate(movie)}
           found={found}
+          capped={this.state.nominatedMovies.length}
         />
       )
     }
