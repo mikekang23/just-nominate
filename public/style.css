@@ -1,0 +1,261 @@
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  padding-bottom: 20px;
+  font-family: kepler-std, serif;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+#contactModal {
+  visibility: hidden;
+  width: auto;
+  padding: 60px 30px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.1);
+
+  pointer-events: none;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 1000;
+}
+
+.contactBtn:hover {
+  cursor: pointer;
+}
+
+#contactModal.open {
+  visibility: visible;
+}
+
+/* Globals */
+.interior.case h1 {
+  font-size: 2rem;
+}
+
+.interior.case h2 {
+  font-size: 1.75rem;
+}
+
+.interior.case h3 {
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+body {
+  font-family: futura-pt, sans-serif;
+  font-size: 1.125rem;
+  background-color: rgb(240,240,240);
+}
+
+/* Navigation */
+.navigation {
+  padding-bottom: 100px;
+}
+
+.navigation .col-12 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: kepler-std, serif;
+}
+
+.navigation a {
+  color: rgb(55,55,55);
+  transition: 0.3s ease color;
+}
+
+.navigation a:hover {
+  color: #0984e3;
+  text-decoration: none;
+}
+
+.footer {
+  margin-top: 100px;
+  height: 200px;
+}
+
+/* Home Page */
+.hero {
+  padding-bottom: 100px;
+}
+
+.hero h1 {
+  font-size: 4.5rem;
+}
+
+.caseLink {
+  display: block;
+  position: relative;
+  margin-bottom: 40px;
+  color: black;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.caseLink:hover {
+  text-decoration: none;
+  color: #0984e3;
+}
+
+.caseLink:hover + .caseLink {
+  background-color: rgba(0,0,0,.75);
+}
+
+video {
+  object-fit: cover;
+}
+
+/* Interior Case */
+.interior.case .hero {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.interior.case .hero .stats {
+  padding: 50px 0;
+}
+
+.interior.case .hero .details {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.interior.case .hero .details p {
+  margin-bottom: 4px;
+  font-size: 1rem;
+}
+
+.interior.case .hero .details .label {
+  min-width: 160px;
+}
+
+.interior.case .testimonial {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.interior.case .testimonial .author {
+  margin-top: 20px;
+}
+
+.interior.case .story .temp12col {
+  margin-bottom: 60px;
+}
+
+.interior.case .story p {
+  margin-bottom: 60px;
+}
+
+.vidPreview {
+  margin-bottom: 00px;
+}
+
+/* Interior Videos */
+.fullVid {
+  padding-bottom: 80px;
+}
+
+.index .videoContainer {
+  margin-bottom: 10px;
+}
+
+.videoContainer {
+  margin-bottom: 60px;
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+
+.videoContainer iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.vidwithtext h3 {
+  padding-bottom: 0;
+  /* margin-bottom: 10px; */
+}
+
+/* Interior Images */
+.interior.case img {
+  margin-bottom: 75px;
+  width: 100%;
+  height: auto;
+}
+
+.interior.case .vidPreview {
+  margin-bottom: 75px;
+}
+
+.interior.case .caseFooter {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+
+.interior.case .caseFooter a {
+  text-decoration: none;
+  color: black;
+  transition: 0.3s ease color;
+}
+
+.interior.case .caseFooter a:hover {
+  color: #0984e3;
+}
+
+.interior.case .caseFooterFinal {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.interior.case .caseFooterFinal h2 {
+  margin-right: 30px;
+}
+
+
+
+.interior.case .caseFooter h2 {
+  padding: 60px 0 30px 0;
+}
+
+/*Temporary placeholders */
+.test {
+  background: rgba(255,0,0,0.1);
+  height: 200px;
+  border: 1px solid rgba(0,0,0,0.2);
+}
+
+.holder {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 300px;
+  background: rgba(255,0,0,0.2);
+}
+
+.temp4col {
+  width: 100%;
+  height: 197px;
+  background: rgba(255,0,0,0.1);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.temp12col {
+  width: 100%;
+  height: 624px;
+  background: rgba(255,0,0,0.1);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
